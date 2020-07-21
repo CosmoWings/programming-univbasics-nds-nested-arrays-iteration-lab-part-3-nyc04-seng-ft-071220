@@ -7,6 +7,6 @@ def join_nested_strings(src)
   
   src.each do |nested_array|
     nested_array.each do|element|
-      if element.class == string
+      if element.class == "String"
   end
 end
