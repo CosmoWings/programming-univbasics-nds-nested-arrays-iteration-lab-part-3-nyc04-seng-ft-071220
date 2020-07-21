@@ -7,6 +7,10 @@ def join_nested_strings(src)
   
   src.each do |nested_array|
     nested_array.each do|element|
-      if element.class == "String"
+      if element.instance_of?(String)
+        string_array.push(element)
+      end
+    end
   end
+string_array.join(" ")
 end
